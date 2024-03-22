@@ -1,7 +1,7 @@
 {{ if .Vars.amzn2023cis_level_1 }}
   {{ if .Vars.amzn2023cis_rule_6_2_2 }}
 file:
-  /etc/passwd:
+  /etc/shadow:
     title: 6.2.2 | Ensure /etc/shadow password fields are not empty
     exists: true
     contents:
